@@ -1,0 +1,16 @@
+#include <stdio.h>
+#include "mystring.h"
+
+int main()
+{
+    FILE *f = open_file("Name of the file", "r");
+    double temp, max = - 273, sum = 0;
+    int n = 0;
+    while (fscanf(f, "%lf", &temp) == 1) {
+	n++;
+    sum = sum + temp;
+	if (temp > max)
+	max = temp;
+}
+  printf("Max temperature: %1.2f\nAvarage temperature %1.2f\n", max, sum/n); 
+}
