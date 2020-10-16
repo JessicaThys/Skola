@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <limits.h>
-int main() {
+int main() { //Hej
   int storsta = INT_MIN; 
   int minsta  = INT_MAX;
   int tal; 
